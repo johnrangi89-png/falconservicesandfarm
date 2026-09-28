@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Falcon Online Services & Farm Products - convenient digital services and quality farm products.">
+  <title>Falcon | Online Services & Farm Products</title>
+  <style>
+    :root{--green:#176b3a;--dark:#123126;--gold:#e4a72c;--cream:#f7f5ed;--white:#fff;--muted:#66736d}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid #e7ebe8}
+    .nav{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:25px;font-weight:800;color:var(--green)} .logo span{color:var(--gold)}
+    nav{display:flex;gap:24px;font-weight:600} nav a:hover{color:var(--green)}
+    .menu{display:none;font-size:25px;cursor:pointer}
+    .hero{background:linear-gradient(120deg,#123126 0%,#176b3a 58%,#2d8b50 100%);color:#fff}
+    .hero-inner{max-width:1150px;margin:auto;padding:88px 22px 82px;display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center}
+    .tag{display:inline-block;background:rgba(255,255,255,.14);padding:8px 14px;border-radius:30px;margin-bottom:18px}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.05;margin-bottom:20px}
+    .hero p{font-size:19px;max-width:680px;color:#edf7f0}
+    .buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 21px;border-radius:8px;font-weight:700;border:2px solid transparent}
+    .btn-primary{background:var(--gold);color:#17230d}.btn-light{border-color:#fff;color:#fff}.btn-light:hover{background:#fff;color:var(--green)}
+    .hero-card{background:#fff;color:var(--dark);border-radius:18px;padding:28px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+    .hero-card h3{color:var(--green);font-size:24px;margin-bottom:12px}
+    .hero-card li{list-style:none;padding:10px 0;border-bottom:1px solid #e9ece9}
+    .hero-card li:last-child{border:0}
+    section{padding:72px 22px}.container{max-width:1150px;margin:auto}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+    .section-head h2{font-size:37px;margin-bottom:9px}.section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #e5e9e6;border-radius:14px;padding:25px;box-shadow:0 7px 25px rgba(20,50,35,.06)}
+    .icon{font-size:35px;margin-bottom:12px}.card h3{margin-bottom:8px;font-size:21px}.card p{color:var(--muted)}
+    .services{background:var(--cream)}
+    .products{background:#fff}
+    .product-card{padding:0;overflow:hidden}.product-image{height:190px;background:#e9f2e9;display:flex;align-items:center;justify-content:center;font-size:70px;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;display:block}
+    .product-body{padding:20px}.price{color:var(--green);font-weight:800;font-size:18px;margin:8px 0}
+    .about{background:#123126;color:#fff}.about .section-head p{color:#d8e6de}
+    .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .contact-box{background:#f7f8f6;padding:30px;border-radius:14px}.contact-box h3{margin-bottom:15px}
+    form{display:grid;gap:13px}input,textarea,select{width:100%;padding:13px;border:1px solid #ccd5cf;border-radius:7px;font:inherit}textarea{min-height:130px}
+    footer{background:#0b2118;color:#cddbd3;text-align:center;padding:28px 20px}
+    footer strong{color:#fff}
+    .note{font-size:13px;color:#75817c;margin-top:9px}
+    @media(max-width:800px){
+      nav{display:none}.menu{display:block}.hero-inner,.contact-wrap{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:540px){.grid{grid-template-columns:1fr}.hero-inner{padding-top:60px}section{padding:55px 18px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="#home">FALCON<span>.</span></a>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+    <nav id="navLinks">
+      <a href="#home">Home</a><a href="#services">Online Services</a><a href="#products">Farm Products</a>
+      <a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="tag">Trusted • Convenient • Local</div>
+      <h1>Falcon Online Services & Farm Products</h1>
+      <p>Your convenient destination for useful online services and quality farm products. We bring digital convenience and farm value closer to you.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#services">Explore Services</a>
+        <a class="btn btn-light" href="#products">View Farm Products</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>What Falcon offers</h3>
+      <ul>
+        <li>💻 Reliable online services</li>
+        <li>🌾 Quality farm products</li>
+        <li>📦 Convenient ordering</li>
+        <li>📞 Friendly customer support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Online Services</h2>
+      <p>Practical digital services for individuals, businesses and organizations.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="icon">🖨️</div><h3>Printing & Photocopying</h3><p>Black-and-white and colour printing, photocopying, document preparation and other everyday printing needs.</p></div>
+      <div class="card"><div class="icon">⌨️</div><h3>Typing & Data Entry</h3><p>Accurate typing, data entry, document formatting, spreadsheet work and other computer-based tasks.</p></div>
+      <div class="card"><div class="icon">📚</div><h3>PP1–PP7 School Materials</h3><p>Reading materials, revision resources, worksheets and educational materials for primary learners from PP1 through PP7.</p></div>
+      <div class="card"><div class="icon">🎓</div><h3>Secondary School Materials</h3><p>Revision notes, reading materials, worksheets and study resources for secondary school learners.</p></div>
+      <div class="card"><div class="icon">🏥</div><h3>SHA Services</h3><p>Assistance with available SHA-related online services, registration and account processes. Customers complete and confirm their own official information.</p></div>
+      <div class="card"><div class="icon">🇰🇪</div><h3>eCitizen Services</h3><p>Assistance navigating available eCitizen services and online applications, subject to government requirements and availability.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Design & Creative Work</h3><p>Flyers, posters, invitations, business materials and other simple digital designs.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>General Online Services</h3><p>Internet research, online forms, email assistance, scanning and other legitimate digital services.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Customer Assistance</h3><p>Talk to Falcon about the service you need and get clear guidance before placing an order.</p></div>
+    </div>
+    <div class="card" style="margin-top:22px;text-align:center;background:#f0f8f2;border-color:#d7e9dc">
+      <h3>Important Service Note</h3>
+      <p>Falcon provides assistance with legitimate online processes. Government services remain subject to official requirements, verification and applicable fees. We do not guarantee approval or government processing times.</p>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head">
+      <h2>Fresh Farm Products</h2>
+      <p>Fresh and useful agricultural products. Availability and prices can change with the season.</p>
+    </div>
+    <div class="grid">
+      <div class="card product-card"><div class="product-image"><img src="assets/hass-avocados.jpg" alt="Fresh Hass avocados"></div><div class="product-body"><h3>Hass Avocados</h3><p>Fresh farm eggs for homes, shops and food businesses.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Order / Enquire</a></div></div>
+      <div class="card product-card"><div class="product-image"><img src="assets/cabbage.jpg" alt="Fresh cabbage"></div><div class="product-body"><h3>Cabbage</h3><p>Seasonal grains and other locally sourced farm produce.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Order / Enquire</a></div></div>
+      <div class="card product-card"><div class="product-image"><img src="assets/capsicum.jpg" alt="Fresh capsicum peppers"></div><div class="product-body"><h3>Capsicum</h3><p>Fresh vegetables depending on current farm availability.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Order / Enquire</a></div></div>
+      <div class="card product-card"><div class="product-image"><img src="assets/spinach.jpg" alt="Fresh spinach"></div><div class="product-body"><h3>Spinach</h3><p>Seasonal fruits sourced from local farms and growers.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Order / Enquire</a></div></div>
+      <div class="card product-card"><div class="product-image"><img src="assets/farm-banner.jpg" alt="Falcon farm produce"></div><div class="product-body"><h3>Fresh Farm Produce</h3><p>Selected poultry-related farm products, subject to availability.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Order / Enquire</a></div></div>
+      <div class="card product-card"><div class="product-image"><img src="assets/farm-banner.jpg" alt="Fresh farm products"></div><div class="product-body"><h3>Other Farm Products</h3><p>Ask us about currently available farm products and quantities.</p><div class="price">Price on request</div><a class="btn btn-primary" href="#contact">Ask Us</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Falcon</h2>
+      <p>Falcon brings together convenient online services and farm products under one simple, customer-focused business. Our goal is to make everyday services and agricultural products easier to access.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact Falcon</h2>
+      <p>Send an enquiry and we'll get back to you.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-box">
+        <h3>Business Information</h3>
+        <p>📞 <strong>Phone:</strong> +254 712 942 264</p>
+        <p>💬 <strong>WhatsApp:</strong> +254 712 942 264</p>
+        <p>✉️ <strong>Email:</strong> johnrangi89@gmail.com</p>
+        <p>📍 <strong>Location:</strong> Chogoria, Kenya</p>
+        <p class="note">Replace the placeholder contact details with your real business information before publishing.</p>
+      </div>
+      <div class="contact-box">
+        <h3>Send an Enquiry</h3>
+        <form onsubmit="sendEmail(event)">
+          <input id="name" required placeholder="Your name">
+          <input id="contact" required placeholder="Phone or email">
+          <select id="type"><option>Online Service</option><option>Farm Product</option><option>General Enquiry</option></select>
+          <textarea id="message" required placeholder="What would you like to order or ask about?"></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+        <p class="note">The form opens your email app. Replace the email address in the code before publishing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> <strong>Falcon Online Services & Farm Products</strong>. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleMenu(){const n=document.getElementById('navLinks'); n.style.display=n.style.display==='flex'?'none':'flex'; n.style.flexDirection='column'; n.style.position='absolute'; n.style.right='20px'; n.style.top='65px'; n.style.background='#fff'; n.style.padding='18px'; n.style.borderRadius='10px';}
+function sendEmail(e){
+  e.preventDefault();
+  const to='johnrangi89@gmail.com';
+  const subject=encodeURIComponent('Falcon Business Enquiry - '+document.getElementById('type').value);
+  const body=encodeURIComponent('Name: '+document.getElementById('name').value+'\nContact: '+document.getElementById('contact').value+'\n\n'+document.getElementById('message').value);
+  window.location.href='mailto:'+to+'?subject='+subject+'&body='+body;
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
